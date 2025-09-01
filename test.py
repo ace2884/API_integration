@@ -1,6 +1,6 @@
 from flask import Flask, request
 
-app = Flask(_name_)
+app = Flask(__name__)
 
 data = {
     1: {"task": "Learn Python", "done": False},
@@ -60,5 +60,5 @@ def delete_todos(id):
         "message": "Todo deleted successfully"
     }
 
-if _name_ == "_main_":
+if __name__ == "_main_":
     app.run(debug=True)
